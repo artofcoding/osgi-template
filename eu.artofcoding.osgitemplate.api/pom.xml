@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>eu.artofcoding.osgitemplate</groupId>
+        <artifactId>eu.artofcoding.osgitemplate</artifactId>
+        <version>LOCALBUILD</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <artifactId>eu.artofcoding.osgitemplate.api</artifactId>
+    <packaging>bundle</packaging>
+    <build>
+        <plugins>
+            <!-- maven-site-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <locales>en</locales>
+                </configuration>
+            </plugin>
+            <!-- maven-bundle-plugin -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Name>art of coding MyService API</Bundle-Name>
+                        <Bundle-Description>API for MyService</Bundle-Description>
+                        <Bundle-SymbolicName>eu.artofcoding.osgitemplate.api</Bundle-SymbolicName>
+                        <Export-Package>eu.artofcoding.osgitemplate.api</Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

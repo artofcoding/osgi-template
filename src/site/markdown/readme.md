@@ -44,17 +44,17 @@ or
 ## Starting OSGi container with installed bundles
 
     felix-framework-4.0.2 $ java -jar bin/felix.jar
-    Dez 23, 2012 4:20:34 PM eu.artofcoding.myservice.impl.MyBundleActivator start
-    INFO: Starting bundle eu.artofcoding.myservice.osgi through eu.artofcoding.myservice.impl.MyBundleActivator
-    Dez 23, 2012 4:20:34 PM eu.artofcoding.myservice.impl.MyBundleActivator start
-    INFO: Bundle eu.artofcoding.myservice.osgi started
-    Dez 23, 2012 4:20:34 PM eu.artofcoding.myservice.client.MyBundleActivator start
-    INFO: Starting bundle eu.artofcoding.myservice.client
-    Dez 23, 2012 4:20:34 PM eu.artofcoding.myservice.impl.MyServiceFactory getService
-    INFO: Created new service instance eu.artofcoding.myservice.impl.MyServiceImpl@44cfc00b for bundle=eu.artofcoding.myservice.client
-    Hello from eu.artofcoding.myservice.impl.MyServiceImpl@44cfc00b#sayHello(), Justus Jonas
-    Dez 23, 2012 4:20:34 PM eu.artofcoding.myservice.client.MyBundleActivator start
-    INFO: Bundle eu.artofcoding.myservice.client started
+    Dez 23, 2012 4:20:34 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator start
+    INFO: Starting bundle eu.artofcoding.osgitemplate.osgi through eu.artofcoding.osgitemplate.impl.MyBundleActivator
+    Dez 23, 2012 4:20:34 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator start
+    INFO: Bundle eu.artofcoding.osgitemplate.osgi started
+    Dez 23, 2012 4:20:34 PM eu.artofcoding.osgitemplate.client.MyBundleActivator start
+    INFO: Starting bundle eu.artofcoding.osgitemplate.client
+    Dez 23, 2012 4:20:34 PM eu.artofcoding.osgitemplate.impl.MyServiceFactory getService
+    INFO: Created new service instance eu.artofcoding.osgitemplate.impl.MyServiceImpl@44cfc00b for bundle=eu.artofcoding.osgitemplate.client
+    Hello from eu.artofcoding.osgitemplate.impl.MyServiceImpl@44cfc00b#sayHello(), Justus Jonas
+    Dez 23, 2012 4:20:34 PM eu.artofcoding.osgitemplate.client.MyBundleActivator start
+    INFO: Bundle eu.artofcoding.osgitemplate.client started
     ____________________________
     Welcome to Apache Felix Gogo
 
@@ -65,27 +65,27 @@ or
     g! update 36 file:/path/to/myservice-api-1.0-SNAPSHOT.jar
 
     g! update 37 file:/path/to/myservice-1.0-SNAPSHOT.jar
-    Dez 23, 2012 3:48:38 PM eu.artofcoding.myservice.impl.MyBundleActivator stop
-    INFO: Stopping bundle eu.artofcoding.myservice.osgi
-    Dez 23, 2012 3:48:38 PM eu.artofcoding.myservice.impl.MyBundleActivator stop
-    INFO: Bundle eu.artofcoding.myservice.osgi stopped
-    Dez 23, 2012 3:48:38 PM eu.artofcoding.myservice.impl.MyBundleActivator start
-    INFO: Starting bundle eu.artofcoding.myservice.osgi through eu.artofcoding.myservice.impl.MyBundleActivator
-    Dez 23, 2012 3:48:38 PM eu.artofcoding.myservice.impl.MyBundleActivator start
-    INFO: Bundle eu.artofcoding.myservice.osgi started
+    Dez 23, 2012 3:48:38 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator stop
+    INFO: Stopping bundle eu.artofcoding.osgitemplate.osgi
+    Dez 23, 2012 3:48:38 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator stop
+    INFO: Bundle eu.artofcoding.osgitemplate.osgi stopped
+    Dez 23, 2012 3:48:38 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator start
+    INFO: Starting bundle eu.artofcoding.osgitemplate.osgi through eu.artofcoding.osgitemplate.impl.MyBundleActivator
+    Dez 23, 2012 3:48:38 PM eu.artofcoding.osgitemplate.impl.MyBundleActivator start
+    INFO: Bundle eu.artofcoding.osgitemplate.osgi started
 
     g! update 40 file:/path/to/myservice-client-1.0-SNAPSHOT.jar
-    Dez 23, 2012 3:48:45 PM eu.artofcoding.myservice.client.MyBundleActivator stop
-    INFO: Stopping bundle eu.artofcoding.myservice.client
-    Dez 23, 2012 3:48:45 PM eu.artofcoding.myservice.client.MyBundleActivator stop
-    INFO: Bundle eu.artofcoding.myservice.client stopped
-    Dez 23, 2012 3:48:45 PM eu.artofcoding.myservice.client.MyBundleActivator start
-    INFO: Starting bundle eu.artofcoding.myservice.client
-    Dez 23, 2012 3:48:45 PM eu.artofcoding.myservice.impl.MyServiceFactory getService
-    INFO: Created new service instance eu.artofcoding.myservice.impl.MyServiceImpl@2b054ac8 for bundle=eu.artofcoding.myservice.client
-    Hello from eu.artofcoding.myservice.impl.MyServiceImpl@2b054ac8#sayHello()
-    Dez 23, 2012 3:48:45 PM eu.artofcoding.myservice.client.MyBundleActivator start
-    INFO: Bundle eu.artofcoding.myservice.client started
+    Dez 23, 2012 3:48:45 PM eu.artofcoding.osgitemplate.client.MyBundleActivator stop
+    INFO: Stopping bundle eu.artofcoding.osgitemplate.client
+    Dez 23, 2012 3:48:45 PM eu.artofcoding.osgitemplate.client.MyBundleActivator stop
+    INFO: Bundle eu.artofcoding.osgitemplate.client stopped
+    Dez 23, 2012 3:48:45 PM eu.artofcoding.osgitemplate.client.MyBundleActivator start
+    INFO: Starting bundle eu.artofcoding.osgitemplate.client
+    Dez 23, 2012 3:48:45 PM eu.artofcoding.osgitemplate.impl.MyServiceFactory getService
+    INFO: Created new service instance eu.artofcoding.osgitemplate.impl.MyServiceImpl@2b054ac8 for bundle=eu.artofcoding.osgitemplate.client
+    Hello from eu.artofcoding.osgitemplate.impl.MyServiceImpl@2b054ac8#sayHello()
+    Dez 23, 2012 3:48:45 PM eu.artofcoding.osgitemplate.client.MyBundleActivator start
+    INFO: Bundle eu.artofcoding.osgitemplate.client started
 
 
     felix:install file:myservice-api-1.0-SNAPSHOT.jar
